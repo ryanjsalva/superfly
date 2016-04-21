@@ -1,0 +1,30 @@
+<!-- (*) assigned classes -->
+
+<!-- *class view-login / background color -->
+<ion-modal-view class="view-login">
+  	<ion-content>
+	  	<!-- *class logo / logo company or app -->
+	  	<div class="logo">
+	  		<img ng-src="img/logo.png" alt="Company">
+	  	</div>
+	  	<!-- form login with button sing in and facebook login style -->
+		<form ng-submit="doLogin()">
+		  	<div class="list list-inset">
+				<label class="item item-input">
+				<input type="text" placeholder="Username">
+				</label>
+				<label class="item item-input">
+				<input type="password" placeholder=".........">
+				</label>
+				<button class="button button-block button-assertive">
+		  			SING IN
+				</button>
+				<span>-or-</span>
+				<button class="button button-block button-outline button-assertive">
+					Facebook
+				</button>
+				<a href="#">Create Acount</a>
+			</div>
+		</form>
+  	</ion-content>
+</ion-modal-view>

@@ -1,0 +1,23 @@
+/**
+ * List Users
+ * --------------------------------------------------
+ */
+
+.input-search {
+	margin: 10px;
+	.item {
+		&.item-input {
+			border-radius: 50px;
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+	}
+}
+.icon-view {
+	display: flex;
+	color: $balanced;
+	font-size: 1.5em;
+	position: absolute;
+	right: 15px;
+	top: 25px;
+}

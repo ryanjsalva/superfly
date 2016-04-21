@@ -1,0 +1,63 @@
+/**
+ * Menus
+ * --------------------------------------------------
+ * Side panel structure
+ */
+
+.menu {
+	background-color: $dark;
+	.bar-header {
+		background-color: $dark;
+		background-image: none;
+		border-color: $dark;
+		.button {
+			color: $assertive;
+		}
+	}
+	.list {
+		.item {
+			background-color: $dark;
+			border-color: #282828;
+			border-left: 4px solid $dark;
+			color: $light;
+			padding: 14px;
+			font-size: 14px;
+			&:first-child {
+				border-color: $dark;
+			}
+			&:last-child {
+				border-bottom-color: $dark;
+			}
+			.icon {
+				color: $calm;
+			}
+			&.active {
+				border-left: 4px solid $assertive;
+			}
+		}
+		.quit {
+    		background-color: #292929;
+    		border-left: 4px solid #292929;
+		}
+		.item-icon-left {
+			padding-left: 54px;
+		}
+		.item-avatar {
+			min-height: 0;
+			padding-left: 0;
+			text-align: center;
+			> img:first-child {
+				border: 5px solid #1a1a1a;
+				max-height: 120px;
+				max-width: 120px;
+				position: static;
+			}
+			h2 {
+				color: $light;
+			}
+		}
+		p {
+			color: $assertive;
+		}
+	}
+} 

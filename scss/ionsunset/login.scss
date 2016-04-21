@@ -1,0 +1,64 @@
+/**
+ * Login
+ * --------------------------------------------------
+ */
+
+.view-login {
+	background: $dark;
+	.bar-header {
+		background-color: $dark;
+		color: $light;
+	}
+	.logo {
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+	.list-inset {
+		background-color: $dark;
+		margin: 20px 40px;
+		.item.item-input input {
+			color: $assertive;
+			padding-right: 0px;
+			text-align: center;
+		}
+	}
+	.list {
+		.item {
+			background-color: $dark;
+			border-color: $assertive;
+			border-radius: 2px;
+			margin:10px 0;
+		}
+		.item-input {
+			padding: 6px 5px;
+		}
+		span {
+			color: $assertive;
+			display: block;
+			text-align: center;
+		}
+		a {
+			color: $assertive;
+			display: block;
+			margin-top: 30px;
+			text-align: center;
+		}
+	}
+	::-webkit-input-placeholder {
+	  	color: $assertive;
+	  	text-align: center;
+	}
+	:-moz-placeholder {
+	   	color: $assertive;
+	  	text-align: center;
+	}
+	::-moz-placeholder {
+	   	color: $assertive;
+	  	text-align: center;
+	}
+	:-ms-input-placeholder {
+	   	color: $assertive;
+	  	text-align: center;
+	}
+}

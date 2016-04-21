@@ -1,0 +1,68 @@
+<!-- (*) classes assigned or controller -->
+
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-assertive">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-ios-drag" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+        </ion-side-menu-content>
+        <!-- *controller MenuActiveCtrl /  active items menu -->
+        <ion-side-menu side="left" expose-aside-when="large" ng-controller="MenuActiveCtrl">
+        <!-- button in header-bar -->
+        <ion-header-bar>
+          <button class="button button-icon icon ion-ios-compose-outline"></button>
+        </ion-header-bar>
+        <ion-content>
+            <ul class="list">
+                <!-- item-avatar user with status -->
+                <a class="item item-avatar" nav-clear>
+                    <img src="img/78.jpg">
+                    <h2>Rebecca Boscop</h2>
+                    <p>I'm time study</p>
+                </a>
+                <!-- menu items  with style active, inactive on off -->
+                <a class="item item-icon-left" ng-class="{active:isActive('/app/listUsers')}" nav-clear menu-close href="#/app/listUsers">
+                    <i class="icon ion-ios-list-outline"></i>List Users
+                </a>
+                <a class="item item-icon-left" ng-class="{active:isActive('/app/news-feed')}" nav-clear menu-close href="#/app/news-feed">
+                    <i class="icon ion-ios-bell-outline"></i>News Feed
+                </a>
+                <a class="item item-icon-left" ng-class="{active:isActive('/app/profile')}" nav-clear menu-close href="#/app/profile">
+                    <i class="icon ion-ios-person-outline"></i>Profile
+                </a>
+
+                <!-- Hockey App -->
+                <a class="item item-icon-left" ng-click="fakeCrash()" ng-hide="environment=='release'">
+                    <i class="icon ion-ios-pulse"></i>Fake Crash
+                </a>
+                <a class="item item-icon-left" ng-click="checkForUpdate()" ng-hide="environment=='release'">
+                    <i class="icon ion-ios-cloud-download-outline"></i>Hockey Update
+                </a>
+                <a class="item item-icon-left" ng-click="sendFeedback()">
+                    <i class="icon ion-ios-chatbubble-outline"></i>Send Feedback
+                </a>
+
+                <!-- Code Push -->
+                <a class="item item-icon-left" ng-click="codePush()">
+                    <i class="icon ion-ios-cloud-download-outline"></i>Code Push Update
+                </a>
+
+                <!-- login/out -->
+                <a class="item item-icon-left" nav-clear menu-close ng-click="login()">
+                    <i class="icon ion-ios-locked-outline"></i>Login
+                </a>
+                <!-- *class quit / style logout -->
+                <a class="item item-icon-left quit" nav-clear menu-close ng-click="infoApp2()">
+                    <i class="icon ion-ios-arrow-thin-right"></i>Logout
+                </a>
+            </ul>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

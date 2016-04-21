@@ -1,0 +1,79 @@
+/**
+ * News Feed
+ * --------------------------------------------------
+ */
+
+.social {
+	position: absolute;
+	right: 11px;
+	a {
+		color: #666;
+		text-decoration: none;
+		.icon {
+			display:inline-block;
+			position: relative;
+			right: 0;
+			&:before {
+				font-size: 14px;
+				width: 12px;
+			}
+		}
+	}
+}
+.icon-p {
+	padding-left: 15px;
+	position: relative;
+	.icon {
+		left: 0;
+		&:before {
+			font-size: 14px;
+			width: 12px;
+		}
+	}
+}
+.social-img-up {
+	background: rgba(244, 93, 76, 0.7);
+	font-size: 18px;
+	padding: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	a {
+		color: $light;
+		text-decoration: none;
+		.icon {
+			display:inline-block;
+			position: relative;
+			right: 0;
+			vertical-align: middle;
+			&:before {
+				font-size: 18px;
+				width: 16px;
+			}
+		}
+	}
+}
+.social-img-down {
+	@extend .social-img-up;
+	bottom: 0;
+	top: initial;
+}
+.red-bg {
+	background-color: $assertive;
+	background-image: none;
+	border: 0;
+	color: $light;
+	.tab-item {
+		border-right: 1px solid #E25546;
+		&:last-child {
+			border-right: 0;
+		}
+	}
+}
+.black-bg {
+	@extend .red-bg;
+	background-color: $dark;
+	.tab-item {
+		border-right: 1px solid #181818;
+	}
+}

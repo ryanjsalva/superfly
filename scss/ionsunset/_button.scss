@@ -1,0 +1,33 @@
+
+/**
+ * Buttons
+ * --------------------------------------------------
+ */
+
+.button {
+	&.button-light {
+		border-color: $light;
+	}
+	&.button-stable {
+		border-color: $stable;
+	}
+	&.button-assertive {
+		border-color: $assertive;
+	}
+	&.button-positive {
+		border-color: $positive;
+	}
+	&.button-balanced {
+		border-color: $balanced;
+	}
+	&.button-calm {
+		border-color: $calm;
+	}
+	&.button-royal {
+		border-color: $royal;
+		color: #818181;
+	}
+	&.button-dark {
+		border-color: $dark;
+	}
+}

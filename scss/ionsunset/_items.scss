@@ -1,0 +1,63 @@
+/**
+ * Items
+ * --------------------------------------------------
+ */
+
+.item {
+	h2 {
+		color: $positive;
+	}
+}
+
+// Link and Button Active States
+
+.item .item-content.activated {
+	background-color: $stable;
+}
+
+// Item Divider
+// -------------------------------
+
+.item-divider {
+	color: #A9A9A9;
+}
+
+// Item Avatar
+//---------------------------------
+
+.item-avatar,
+.item-avatar .item-content,
+.card .item-avatar {
+	> img:first-child {
+		border: 1px solid $positive;
+		max-width: 50px;
+	  	max-height: 50px;
+	 	padding: 2px;
+	 	top: 12px;
+	}
+}
+
+// Item Option List
+//----------------------------------
+
+.item-options {
+	.button {
+		background-color: $dark;
+		color: $light;
+		padding: 0 6px;
+		&:first-child {
+			padding-left: 12px;
+		}
+		&:last-child {
+			padding-right: 12px;
+		}
+		i {
+			&:before {
+				background-color: #2D2D2D;
+  				border-radius: 50%;
+				font-size: 25px;
+				width: 42px;
+			}
+		}
+	}
+}

@@ -1,0 +1,70 @@
+/**
+ * Bar
+ * --------------------------------------------------
+ */
+
+.bar {
+ 	&.bar-light {
+ 		background-image: none;
+ 		border-color: $light;
+ 		&.bar-footer {
+ 			border-color: $light;
+ 		}
+ 	}
+ 	&.bar-stable {
+ 		background-image: none;
+ 		border-color: $stable;
+ 		&.bar-footer {
+ 			border-color: $stable;
+ 		}
+ 	}
+ 	&.bar-positive {
+ 		background-image: none;
+ 		border-color: $positive;
+ 		&.bar-footer {
+ 			border-color: $positive;
+ 		}
+ 	}
+ 	&.bar-calm {
+ 		background-image: none;
+ 		border-color: $calm;
+ 		&.bar-footer {
+ 			border-color: $calm;
+ 		}
+ 	}
+ 	&.bar-assertive {
+ 		background-image: none;
+ 		border-color: $assertive;
+ 		&.bar-footer {
+ 			border-color: $assertive;
+ 		}
+ 	}
+ 	&.bar-balanced {
+ 		background-image: none;
+ 		border-color: $balanced;
+ 		&.bar-footer {
+ 			border-color: $balanced;
+ 		}
+ 	}
+ 	&.bar-energized {
+ 		background-image: none;
+ 		border-color: $energized;
+ 		&.bar-footer {
+ 			border-color: $energized;
+ 		}
+ 	}
+ 	&.bar-royal {
+ 		background-image: none;
+ 		border-color: $royal;
+ 		&.bar-footer {
+ 			border-color: $royal;
+ 		}
+ 	}
+ 	&.bar-dark {
+ 		background-image: none;
+ 		border-color: $dark;
+ 		&.bar-footer {
+ 			border-color: $dark;
+ 		}
+ 	}
+}

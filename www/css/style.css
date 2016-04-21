@@ -1,0 +1,211 @@
+/* @autor : MakingTap - Jessi Gutierrez */
+
+/* side menu*/
+
+.menu {
+	background-color: #272727;
+}
+.menu .bar-header {
+	background-color: #272727;
+	border-color: #272727;
+}
+.menu .bar-header .button {
+	color: #F45D4C;
+}
+.menu .list .item {
+	background-color: #272727;
+	border-color: #303030;
+	color: #fff;
+}
+.menu .list .item:first-child {
+	border-color: #272727;
+}
+.menu .list .item:last-child {
+	border-bottom-color: #272727;
+}
+.menu .list .item .icon {
+	color: #A1DBB2;
+}
+.menu .list .item-avatar {
+	min-height: 0;
+	padding-left: 0;
+	text-align: center;
+}
+.menu .list .item-avatar > img:first-child {
+	border: 5px solid #1F1F1F;
+	max-height: 120px;
+	max-width: 120px;
+	position: static;
+}
+.menu .list .item-avatar h2 {
+	color: #fff;
+}
+.menu .list .item p {
+	color: #F45D4C;
+}
+
+/* list */
+
+.list .item {
+	border-color: #EDEDED;
+}
+.item-divider {
+	background-color: #A1DBB2;
+	border-color: #fff;
+	color: #fff;
+}
+.item-avatar .item-content > img:first-child,.card .item-avatar > img:first-child {
+	border: 2px solid #FACA66;
+	max-width: 45px;
+  	max-height: 45px;
+ 	padding: 1px;
+}
+.item .item-content.activated {
+	background-color: #FEE5AD;
+	border-color: #F45D4C;
+}
+.item h2 {
+	color: #F7A541;
+}
+.item.tabs.tabs-secondary {
+	background-color: #F45D4C;
+	color: #fff;
+}
+.item.tabs.tabs-secondary .tab-item {
+	border-right: 1px solid #E25546;
+	opacity: 1;
+}
+.item.tabs.tabs-secondary .tab-item:last-child {
+	border-right: 0;
+}
+
+/* imput */
+
+.item-input-wrapper {
+	background: #FEE5AD;
+}
+.input-label {
+	color: #F45D4C;
+}
+textarea, input[type="text"], input[type="password"],
+input[type="datetime"], input[type="datetime-local"],
+input[type="date"], input[type="month"],
+input[type="time"], input[type="week"],
+input[type="number"], input[type="email"],
+input[type="url"], input[type="search"],
+input[type="tel"], input[type="color"] {
+	color: #696969;
+}
+.item-select select {
+	color: #696969;
+}
+
+/* buttons */
+
+.button.button-light {
+	border-color: #fff;
+}
+.button.button-stable {
+	border-color: #D8D7D7;
+}
+.button.button-assertive {
+	border-color: #F45D4C;
+}
+.button.button-positive {
+	border-color: #FFAA7E;
+}
+.button.button-balanced {
+	border-color: #A1DBB2;
+}
+.button.button-calm {
+	border-color: #FACA66;
+}
+.button.button-royal {
+	border-color: #FEE5AD;
+}
+.button.button-dark {
+	border-color: #272727;
+}
+
+/* News */
+
+.icon-view {
+	display: flex;
+	color: #D8D7D7;
+	font-size: 1.4em;
+	position: absolute;
+	right: 32px;
+	top: 16px;
+}
+.view-profile {
+	background-color: #F45D4C;
+}
+.view-profile .list {
+	margin: 0 30px;
+}
+.view-profile .list .item {
+	background-color: #F45D4C;
+	border-color: #FC7869;
+	border-left: 0;
+	border-right: 0;
+	color: #fff;
+}
+.view-profile .list .item:first-child {
+	border-color: #F45D4C;
+}
+.view-profile .list .item-avatar {
+	min-height: 0;
+	padding-left: 0;
+	text-align: center;
+}
+.view-profile .item-avatar > img:first-child {
+	border: 5px solid #FC7869;
+	max-height: 120px;
+	max-width: 120px;
+	position: static;
+}
+.view-profile .list .item-avatar h2, .view-profile .list .input-label {
+	color: #fff;
+}
+.view-profile .list .item p, .view-profile .list input {
+	color: #FEE5AD;
+}
+.view-login {
+	background: #272727;
+}
+.view-login .bar-header {
+	background-color: #272727;
+	color: #fff;
+}
+.view-login .logo {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.view-login .list-inset {
+	background-color: #272727;
+	margin: 20px 40px;
+}
+.view-login .list .item {
+	background-color: #272727;
+	border-color: #F45D4C;
+	border-radius: 2px;
+	margin:10px 0;
+}
+.view-login .list .item-input {
+	padding: 6px 5px;
+}
+.view-login .list-inset .item.item-input input {
+	color: #F45D4C;
+	padding-right: 0px;
+	text-align: center;
+}
+.view-login input::-webkit-input-placeholder {
+  	color: #F45D4C;
+  	text-align: center;
+}
+.view-login .list span {
+	color: #F45D4C;
+	display: block;
+	text-align: center;
+}

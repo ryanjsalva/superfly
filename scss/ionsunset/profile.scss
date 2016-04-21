@@ -1,0 +1,96 @@
+/**
+ * Profile
+ * --------------------------------------------------
+ */
+
+.view-profile {
+	.profile-bg {
+		.item {
+			background-color: $assertive;
+			border:0;
+		}
+		.item-avatar {
+			min-height: 0;
+			padding-left: 0;
+			text-align: center;
+			.content-img {
+				display: inline-block;
+				position: relative;
+				img {
+					border: 5px solid #FF8182;
+					border-radius: 50%;
+					max-height: 120px;
+					max-width: 120px;
+					position: static;
+				}
+				.bg-img {
+					background-color: rgba(0, 0, 0, 0.3);
+					border-radius: 50%;
+					height: 110px;
+					left: 5px;
+					position: absolute;
+					top: 5px;
+					width: 110px;
+					&:before {
+						color: $stable;
+						content: "\f3f5";
+						font-family: "Ionicons";
+						font-size: 3em;
+						position: relative;
+						top: 45px;
+					}
+				}
+			}
+			h2 {
+				color: $light;
+			}
+			p {
+				color: #A63A3B;
+			}
+		}
+	}
+	.button-bar {
+		.button {
+			background-color: #E84D4D;
+			border: 0;
+			border-right: 1px solid $assertive;
+			color: #FFA6A7;
+			padding: 10px 16px;
+			&:last-child {
+				border-right:0;
+			}
+			h2 {
+				color: $light;
+				font-size: 22px;
+				margin: 0;
+			}
+			p {
+				font-size: 12px;
+				line-height: 14px;
+				margin: 0;
+			}
+		}
+	}
+	.list {
+		margin: 20px 40px 0;
+		.item {
+			border-left: 0;
+			border-right: 0;
+			color: $light;
+			&:first-child {
+				border-top: none;
+			}
+			.input-label {
+				color: $assertive;
+				font-size: 14px;
+			}
+			input {
+				color: $calm;
+				height: 25px;
+			}
+		}
+		.item-input {
+			padding: 6px 0;
+		}
+	}
+}
